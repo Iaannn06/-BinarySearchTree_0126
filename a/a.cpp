@@ -102,12 +102,13 @@ public:
 			cout << ptr->info << " ";
 		}
 	}
+};
 
-	int main()
+int main()
+{
+	BinaryTree obj;
+	while (true)
 	{
-		BinaryTree obj;
-		while (true)
-		{
 		cout << "\nMenu" << endl;
 		cout << "1. Implement insert operation" << endl;
 		cout << "2. Perform inorder traversal" << endl;
@@ -115,6 +116,46 @@ public:
 		cout << "4. Perform postorder traversal" << endl;
 		cout << "5. Exit" << endl;
 		cout << "\nEnter your choice (1-5) : ";
+
+		char ch;
+		cin >> ch;
+		cout << endl;
+
+
+		switch (ch)
+		{
+		case '1':
+		{
+			cout << "Enter a word: ";
+			string word;
+			cin >> word;
+			obj.insert(word);
+			break;
+		}
+		case '2':
+		{
+			obj.inorder(obj.ROOT);
+			break;
+		}
+		case '3':
+		{
+			obj.preorder(obj.ROOT);
+			break;
+		}
+		case '4':
+		{
+			obj.postorder(obj.ROOT);
+			break;
+		}
+		case '5':
+			return 0;
+		default:
+		{
+			cout << "Invalid option" << endl;
+			break;
+
+		}
 		}
 	}
-};
+}
+
