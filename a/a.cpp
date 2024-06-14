@@ -42,7 +42,11 @@ public:
 		if (element < parent->info)
 		{
 			parent->leftchild = newNode;
-		
+		}
+		else if (element > parent->info)
+
+		{
+
 		}
 
 	}
