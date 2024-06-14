@@ -2,9 +2,12 @@
 using namespace std;
 #include <iostream>
 
-class node {
+class Node {
 public:
 	string info;
-	node *leftchild;
-	node* rightchild;
+	Node *leftchild;
+	Node* rightchild;
+
+	Node(string i, Node* 1, Node* r)
+
 };
