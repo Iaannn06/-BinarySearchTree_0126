@@ -40,9 +40,9 @@ public:
 			return;
 		}
 		if (element < parent->info)
-
 		{
-
+			parent->leftchild = newNode;
+		
 		}
 
 	}
